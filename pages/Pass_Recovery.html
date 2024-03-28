@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epsilon Motors - Password Recovery</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img src="../images/logo.png" alt="Logo" width="10%" />
+        </div>
+        <div class="header__menu">
+          <a href="../index.html">Main</a>
+          <a href="../pages/Catalog.html">Catalog</a>
+          <a href="../pages/Contacts.html">Contacts</a>
+          <a href="../pages/Authorization.html">Sing in</a>
+        </div>
+      </header>
+      <div class="singin">
+        <div class="singin--img">
+          <img
+            src="../images/backgroud_car_off.png"
+            alt="Lamborgini"
+            width="100%"
+          />
+        </div>
+        <div class="restor__block">
+          <div class="restor__block--header">
+            <h1>Password recovery</h1>
+          </div>
+          <form action="https://fom.in.ua/echo" method="POST">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <button type="submit">Restore</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
