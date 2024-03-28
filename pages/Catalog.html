@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epsilon Motors - Catalog</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img src="../images/logo.png" alt="" width="10%" />
+        </div>
+        <div class="header__menu">
+          <a href="../index.html">Main</a>
+          <a href="../pages/Catalog.html">Catalog</a>
+          <a href="../pages/Contacts.html">Contact US</a>
+          <a href="../pages/Authorization.html">Sing in</a>
+        </div>
+      </header>
+      <div class="catalog__conteiner">
+        <div class="available__cars">
+          <div class="car">
+            <img src="../images/car/bentayga.png" alt="Bentley Bentayga" />
+            <div class="car-info">
+              <h3>Bentley Bentayga</h3>
+              <ul>
+                <li>Type of body: SUV</li>
+                <li>Car brand: Bentley</li>
+                <li>Country of origin: UK</li>
+                <li>Price: $200,000</li>
+                <li>Year: 2022</li>
+                <li>Color: Black</li>
+              </ul>
+            </div>
+          </div>
+          <div class="car">
+            <img src="../images/car/cayenne.png" alt="Porsche Cayenne" />
+            <div class="car-info">
+              <h3>Porsche Cayenne</h3>
+              <ul>
+                <li>Type of body: SUV</li>
+                <li>Car brand: Porsche</li>
+                <li>Country of origin: Germany</li>
+                <li>Price: $150,000</li>
+                <li>Year: 2023</li>
+                <li>Color: Red</li>
+              </ul>
+            </div>
+          </div>
+          <div class="car">
+            <img src="../images/car/maclaren.png" alt="MacLaren" />
+            <div class="car-info">
+              <h3>MacLaren P1</h3>
+              <ul>
+                <li>Type of body: Sedan</li>
+                <li>Car brand: MacLaren</li>
+                <li>Country of origin: UK</li>
+                <li>Price: $460,000</li>
+                <li>Year: 2019</li>
+                <li>Color: Yellow</li>
+              </ul>
+            </div>
+          </div>
+          <div class="car">
+            <img src="../images/car/porshe_911.png" alt="Porsche 911" />
+            <div class="car-info">
+              <h3>Porsche 911</h3>
+              <ul>
+                <li>Type of body: Hatchback</li>
+                <li>Car brand: Porsche</li>
+                <li>Country of origin: Germany</li>
+                <li>Price: $170,000</li>
+                <li>Year: 2012</li>
+                <li>Color: gray</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="filter__options">
+          <h2>Filter options</h2>
+          <form method="post" action="https://fom.in.ua/echo">
+            <div class="form-group">
+              <label for="body-type">Type of body:</label>
+              <select id="body-type" name="body-type">
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="hatchback">Hatchback</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="car-brand">Car brand:</label>
+              <select id="car-brand" name="car-brand">
+                <option value="bentley">Bentley</option>
+                <option value="mclaren">McLaren</option>
+                <option value="porsche">Porsche</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="country">Country of origin:</label>
+              <select id="country" name="country">
+                <option value="uk">UK</option>
+                <option value="uk">ITALY</option>
+                <option value="germany">Germany</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="price-from">Price from:</label>
+              <input
+                type="number"
+                id="price-from"
+                name="price-from"
+                min="0"
+                step="1000"
+              />
+            </div>
+            <div class="form-group">
+              <label for="price-to">Price to:</label>
+              <input
+                type="number"
+                id="price-to"
+                name="price-to"
+                min="0"
+                step="1000"
+              />
+            </div>
+            <div class="form-group--spec">
+              <div class="form-group">
+                <label for="year-from">Year from:</label>
+                <input
+                  type="number"
+                  id="year-from"
+                  name="year-from"
+                  min="1950"
+                  step="1"
+                />
+              </div>
+              <div class="form-group">
+                <label for="year-to">Year to:</label>
+                <input
+                  type="number"
+                  id="year-to"
+                  name="year-to"
+                  min="1950"
+                  step="1"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="color">Color:</label>
+              <select id="color" name="color">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="silver">Silver</option>
+                <option value="gray">Gray</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+                <option value="purple">Purple</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="comfort-options">Comfort options:</label>
+              <select id="comfort-options" name="comfort-options" multiple>
+                <option value="sunroof">Sunroof</option>
+                <option value="leather-seats">Leather Seats</option>
+                <option value="heated-seats">Heated Seats</option>
+                <option value="navigation-system">Navigation System</option>
+                <option value="parking-assist">Parking Assist</option>
+                <option value="rear-view-camera">Rear View Camera</option>
+                <option value="bluetooth-connectivity">
+                  Bluetooth Connectivity
+                </option>
+                <option value="keyless-entry">Keyless Entry</option>
+                <option value="adaptive-cruise-control">
+                  Adaptive Cruise Control
+                </option>
+                <option value="premium-sound-system">
+                  Premium Sound System
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button type="submit">Apply Filters</button>
+              <button type="reset" id="reset-filters">Reset Filters</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
