@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epsilon Motors - Registration</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img src="../images/logo.png" alt="" width="10%" />
+        </div>
+        <div class="header__menu">
+          <a href="../index.html">Main</a>
+          <a href="../pages/Catalog.html">Catalog</a>
+          <a href="../pages/Contacts.html">Contact US</a>
+          <a href="../pages/Authorization.html">Sing in</a>
+        </div>
+      </header>
+      <div class="singin">
+        <div class="singin--img">
+          <img
+            src="../images/backgroud_car_off.png"
+            alt="Lamborgini"
+            width="100%"
+          />
+        </div>
+
+        <div class="registration__block">
+          <h1>Registration</h1>
+          <form action="https://fom.in.ua/echo" method="POST">
+            <div class="form-group">
+              <label for="first-name">First Name:</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name:</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="birthdate">Date of Birth:</label>
+              <input type="date" id="birthdate" name="birthdate" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                pattern="+[0-9]{14}"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="username">Username:</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password at least 8 characters(including uppercase letter, special character, digit)"
+                required
+                pattern="(?=.*\d)(?=.*[A-Z])(?=.*\W).{8,}"
+              />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password:</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="Confirm your password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <button type="submit">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
