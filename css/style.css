@@ -205,3 +205,67 @@ body {
 .restor__block button:hover {
   background-color: #590209; /* Изменяем цвет фона при наведении */
 }
+
+/* 
+
+
+
+
+Стили для формы регистрации 
+
+
+
+
+
+*/
+/* Стили для блока регистрации */
+.registration__block {
+  width: 30%; /* Ширина блока регистрации */
+  margin-top: 5%; /* Отступ сверху блока */
+  color: #f2f2f2; /* Цвет текста в блоке */
+}
+
+/* Стили для заголовка блока регистрации */
+.registration__block h1 {
+  color: #f2f2f2; /* Цвет заголовка */
+  font-size: 24px; /* Размер шрифта заголовка */
+  padding-bottom: 10px; /* Отступ снизу заголовка */
+}
+
+/* Стили для полей ввода в блоке регистрации */
+.registration__block input[type="text"],
+.registration__block input[type="email"],
+.registration__block input[type="tel"],
+.registration__block input[type="password"],
+.registration__block input[type="date"] {
+  width: 100%; /* Ширина полей ввода */
+  padding: 8px; /* Внутренние отступы */
+  border: 1px solid #4f5859; /* Граница поля ввода */
+  background-color: transparent; /* Прозрачный фон */
+  color: #f2f2f2; /* Цвет текста */
+  border-radius: 5px; /* Закругление углов */
+  box-sizing: border-box; /* Учитываем рамку внутри размеров элемента */
+  outline: none; /* Убираем контур фокуса */
+}
+
+/* Стили для кнопки в блоке регистрации */
+.registration__block button {
+  font-family: "Cinzel"; /* Шрифт кнопки */
+  font-size: 16px; /* Размер шрифта кнопки */
+  padding: 10px 20px; /* Внутренние отступы кнопки */
+  border: none; /* Убираем границу кнопки */
+  cursor: pointer; /* Изменяем курсор при наведении */
+  color: #f2f2f2; /* Цвет текста кнопки */
+  background-color: #4f5859; /* Цвет фона кнопки */
+  transition: background-color 0.3s ease; /* Плавная анимация при наведении */
+}
+
+/* Стили при наведении на кнопку в блоке регистрации */
+.registration__block button:hover {
+  background-color: #590209; /* Изменяем цвет фона при наведении */
+}
+
+/* Стили для фокуса на поле ввода типа date в блоке регистрации */
+.registration__block input[type="date"]:focus {
+  border-color: #590209; /* Цвет рамки при фокусе */
+}
