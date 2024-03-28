@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epsilon Motors - SingIn</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img src="../images/logo.png" alt="Logo" width="10%" />
+        </div>
+        <div class="header__menu">
+          <a href="../index.html">Main</a>
+          <a href="../pages/Catalog.html">Catalog</a>
+          <a href="../pages/Contacts.html">Contacts</a>
+          <a href="../pages/Authorization.html">Sing in</a>
+        </div>
+      </header>
+      <div class="singin">
+        <div class="singin--img">
+          <img
+            src="../images/backgroud_car_off.png"
+            alt="Lamborgini"
+            width="100%"
+          />
+        </div>
+        <div class="singin__block">
+          <div class="singin__block--header">
+            <h1>Sign In</h1>
+            <button class="register-btn">
+              <a href="../pages/Registration.html">Register</a>
+            </button>
+          </div>
+          <form action="https://fom.in.ua/echo" method="POST">
+            <div class="form-group">
+              <label for="username">Username:</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <button type="submit">Sign In</button>
+              <a href="../pages/Pass_Recovery.html">Forgot Password</a>
+              <input
+                type="checkbox"
+                id="remember-password"
+                name="remember-password"
+              />
+              <label for="remember-password">Remember password</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
