@@ -346,3 +346,77 @@ body {
   content: "•"; /* Добавляем маркеры в виде точек */
   margin-right: 5px; /* Отступ справа от маркера */
 }
+
+/* 
+
+
+Menu filter 
+
+
+
+*/
+/* Стили для меню фильтров */
+.filter__options {
+  padding-right: 2%; /* Правый внутренний отступ */
+  color: #f2f2f2; /* Цвет текста */
+  font-size: 24px; /* Размер шрифта */
+}
+
+.filter__options h2 {
+  font-size: 28px; /* Размер шрифта заголовка */
+  margin-bottom: 20px; /* Отступ снизу заголовка */
+}
+
+/* Стили для группы формы в меню фильтров */
+.form-group {
+  margin-bottom: 20px; /* Отступ снизу группы формы */
+}
+
+/* Стили для меток в группе формы */
+.filter__options .form-group label {
+  display: block; /* Отображаем метку как блочный элемент */
+  margin-bottom: 5px; /* Отступ снизу метки */
+}
+
+/* Стили для выбора опций, числовых полей и кнопок в группе формы */
+.filter__options .form-group select,
+.filter__options .form-group input[type="number"],
+.filter__options .form-group button {
+  width: 100%; /* Ширина элементов в группе формы */
+  padding: 10px; /* Внутренние отступы */
+  border: 1px solid #4f5859; /* Граница элементов */
+  border-radius: 5px; /* Закругление углов */
+  background-color: transparent; /* Прозрачный фон */
+  color: #f2f2f2; /* Цвет текста */
+  font-size: 16px; /* Размер шрифта */
+  margin-top: 5px; /* Отступ сверху */
+}
+
+/* Стили для множественного выбора опций в группе формы */
+.filter__options .form-group select[multiple] {
+  height: 120px; /* Высота для множественного выбора опций */
+}
+
+/* Стили для кнопок отправки и сброса в группе формы */
+.filter__options .form-group button[type="submit"],
+.filter__options .form-group button[type="reset"] {
+  cursor: pointer; /* Изменяем курсор при наведении */
+  background-color: #4f5859; /* Цвет фона кнопки */
+  color: #f2f2f2; /* Цвет текста кнопки */
+  border: none; /* Убираем границу кнопки */
+  padding: 10px 20px; /* Внутренние отступы */
+  border-radius: 5px; /* Закругление углов */
+  margin-top: 20px; /* Отступ сверху */
+  transition: background-color 0.3s ease; /* Плавная анимация при наведении */
+}
+
+/* Стили при наведении на кнопки отправки и сброса */
+.filter__options .form-group button[type="submit"]:hover,
+.filter__options .form-group button[type="reset"]:hover {
+  background-color: #590209; /* Изменяем цвет фона при наведении */
+}
+
+/* Стили для фона ниспадающих списков в группе формы */
+.filter__options .form-group select {
+  background-color: #4f5859; /* Цвет фона списка */
+}
